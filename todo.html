@@ -12,7 +12,41 @@
     <title>ToDoList</title>
 </head>
 <body>
-
+    <div class="todo-container">
+        <header>
+            <h2>toDoList</h2>
+        </header>
+        <form id="todo-form">
+            <p>Adicione suas Tarefas</p>
+            <div class="form-control">
+                <input type="text" id="todo-input" placeholder="O que vai fazer?">
+                <button type="submit">
+                    <i class="fa-thin fa-plus"></i>
+                </button>
+            </div>
+        </form>
+        <form id="edit-form">
+            <p>Editar tarefa:</p>
+            <div class="form-control">
+                <input type="text" id="edit-input">
+                <button type="submit">
+                    <i class="fa-solid fa-check-double"></i>
+                </button>
+            </div>
+            <button id="cancel-edit-btn">Cancelar</button>
+        </form>
+        <div id="toolbar"> <!-- barra de ferramentas com Pesquisa & Filtro -->
+            <div id="search">
+                <h4>Pesquisar:</h4>
+                <form>
+                    <input type="text" id="search-input" placeholder="Buscar" />
+                    <button id="erase-button"> <!-- vai servir para apagar o q usuário digito, limpar a busca!-->
+                        <i class="fa-solid fa-delete-left"></i>
+                    </button>
+                </form>
+            </div>
+        </div>
+    </div>
     
 </body>
 </html>
